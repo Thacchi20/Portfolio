@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 50vh;
+  background:linear-gradient(60deg, black, white)
+}
+
+.nav-toggle {
+  position: fixed;
+  top: 16px;
+  left: 7px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 9999;
+  color: black; 
+}
+
+
+
+.nav-toggle span {
+  display: block;
+  width: 20px;
+  height: 3px;
+  background-color: dimgrey;
+  margin-bottom: 4px;
+  transition: background-color 0.3s ease-in; 
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  padding: 10px;
+  padding-left: 38px;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in;
+  padding-bottom: px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0px 12px;
+  padding-left: 10px;
+  background-color: transparent;
+  border: none;
+  border-radius: 9px;
+  font-family: 'Teko', sans-serif;
+  font-size : 24px;
+  color: white;
+}
+
+nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+nav.open {
+  transform: translateY(0);
+}
+
+.headler {
+  background-color: white;
+  color: black;
+  position: fixed;
+  padding-left: 50px;
+  padding-right:250px;
+  font-size:12.5px;
+  font-family: 'Acme', sans-serif;
+  padding-top:16px;
+  padding-bottom: 17px;
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quando&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .headler {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .headler h1 {
+      margin: 0;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-container a {
+      margin-right: 10px;
+    }
+
+    .github-logo,
+    .whatsapp-logo {
+      font-size: 24px;
+    }
+
+    .github-logo {
+      position: fixed;
+      right: 10px;
+      color: black;
+    }
+
+    .whatsapp-logo {
+      position: fixed;
+      right: 50px;
+      color: black;
+      text-size:20px;
+    }
+
+    .photo {
+      max-width: 50%;
+      margin-top: 40px;
+      position:fixed;
+      top: 40px;
+      left: 15px;
+      border-radius: 500px;
+      border: 3px solid white;
+      box-shadow: 3px 3px 5px black;
+      object-fit: cover;
+    }
+
+    .header-text {
+      position: fixed;
+      top: 150px;
+      right: 60px;
+      font-size: 40px;
+      text-align: right;
+    font-family: 'Sedgwick Ave', cursive;
+       -webkit-text-stroke: 1.5px  black;
+       color:white;
+       text-shadow: 1px 1px 2px black;
+    }
+    
+      .hola {
+        position: fixed;
+        top: 60px;
+        right: 80px;
+        font-size: 60px;
+        text-align: right;
+      font-family: 'Delicious Handrawn', cursive;
+       color: yellow;
+       -webkit-text-stroke: 2px  white;
+       text-shadow: 2px 2px 2px yellow;
+      }
+      
+       .Thasleem {
+        position: fixed;
+        top: 188px;
+        right: 10px;
+        font-size: 42px;
+        text-align: right;
+      font-family: 'Righteous', cursive;
+       color: white;
+       -webkit-text-stroke: 1px  white;
+       color: black;
+       text-shadow: 1px 1px 2px white;
+       }
+  </style>
+</head>
+
+<body>
+  <div class="headler">
+    <h1>Thasleem</h1>
+    <div class="logo-container">
+      <a href="https://wa.me/+918088122761" class="whatsapp-logo">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://github.com/your-github-username" class="github-logo">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+    <div class="Thasleem">
+      <p>Thasleem</p>
+    </div>
+
+  <div class="header-text">
+    <p>IM</p>
+  </div>
+
+  <div class="hola">
+    <p>hello,</p>
+  </div>
+
+  <img src="/photo/1685523449715.jpg" alt="Your Photo" class="photo">
+
+  <div class="nav-toggle" onclick="toggleNavbar()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="#">Thasleem</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  
+
+  <script>
+    function toggleNavbar() {
+      document.querySelector('nav').classList.toggle('open');
+      document.querySelector('.nav-toggle').classList.toggle('clicked');
+    }
+  </script>
+</body>
+
+</html>
