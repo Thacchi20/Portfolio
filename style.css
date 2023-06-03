@@ -3,9 +3,8 @@ body {
   padding: 0;
    position: fixed;
   background: linear-gradient(30deg, black, white);
-  width: 100%;
-   position: absolute;
-  height:100%;
+  width: 100vh;
+  height:100vh;
 }
 
 .nav-toggle {
@@ -90,6 +89,6 @@ nav.open {
   font-family: 'Acme', sans-serif;
   padding-top:16px;
   padding-bottom: 17px;
-   position: absolute;
+ 
   
 }
